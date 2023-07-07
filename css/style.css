@@ -1,0 +1,197 @@
+html, 
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    /* border: 1px red solid; */
+}
+/* ------elements------ */
+.icon{
+    width: 140px;
+    height: 23.162px; 
+}
+.other-pages{
+    text-transform: uppercase;
+    color: #090909;
+    text-align: right;
+    text-decoration: none;
+    font-size: 0.7rem;
+    line-height: normal;   
+    font-style: normal;
+    font-weight: bold;
+}
+.date{
+    text-transform: capitalize;
+    color: white;
+    font-size: 12px;
+    /* border: 1px red solid; */
+}
+.hero-heading{
+    color: #fff;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: -0.96px;
+    text-decoration: none;
+    /* border: 1px red solid; */
+}
+.hero-heading a {
+    text-decoration: none;
+    color: #FFF;
+}
+.hero-text{
+    color: #FFF;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: regular;
+    /* border: 1px red solid; */
+}
+
+.blog-img{
+    margin: 0;
+    width: 100%;
+    border-radius: 2px;
+}
+.blog-date{
+    font-size: 0.9rem;
+    line-height: normal;
+}
+.blog-heading{
+    font-size: 1.5rem;
+}
+.blog-text{
+    font-size: 1rem;
+}
+.blog-date, .blog-text,.blog-heading, .date, .hero-heading, .hero-text{
+    line-height: 100%;
+    margin: 0.5625rem 0;
+}
+.main-about{
+    text-align: left;
+}
+.about-img{
+    display: block;
+    border-radius: 50%;
+    width: 182px;
+    height: 182px;
+    margin-top: 5vh;
+    margin-right: auto;
+    margin-left: auto;
+}
+.about-p, .about-h3{
+    font-size: 1rem;
+}
+.about-h1{
+    font-size: 2.15rem;
+}
+.footer-p {
+    font-size: 0.75rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;;
+    line-height: 108%;
+    letter-spacing: -0.36px;
+}
+
+
+/* ------arrangments------ */
+header{
+    height: 3.75rem;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    margin:0 1.125rem;
+    /* border: 1px red solid; */
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+}
+blog-post{  
+    color: white;
+    /* border: 1px red solid;  */
+}
+.hero-post{
+    width: inherit;
+    min-height: 10rem;
+    text-align: left;
+    background: #090909 url("images/article-image.jpg");
+    background-size: cover;
+    padding: 80% 5% 5% 5%;
+    padding-top: 5rem;
+    border-radius: 5px;
+    /* border: red 1px solid; */
+}
+.recent-posts{
+        padding: 1.5rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        grid-gap: 1em;
+    }
+    .post-heading{
+        text-align: center;
+        color: #090909;
+        grid-column: 1 / -1;
+    }
+    .blog-image{
+        padding: 0;
+        margin: 0 0 0 -10.5vw;
+        width: 90vw;
+        height: 100%;
+    }
+footer{
+    height: 2rem;
+    background: #202020;
+    color: #ECECEC;
+    display: flex;
+    flex-direction: column;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    text-align: center;
+}
+
+/* ------ Adding Wide breakpoint----- */
+@media(min-width: 768px){
+    
+    
+    html, 
+    body{
+        box-sizing: border-box;
+        background: #ECECEC;
+        margin: 0;
+        padding: 0;
+    }
+    header{
+        box-sizing: border-box;
+        padding: 0 15vw;
+        background-color: #FFF;
+        margin: 0;
+    }
+    section,
+    .main-about{
+        box-sizing: border-box;
+        padding: 5vh 15vw;
+        margin: 0;
+    }
+    .hero-post{
+        box-sizing: border-box;
+        margin: 0 10vw;
+        padding: 50vh 10vw 10vh 10vh;
+    }
+    .about{
+        display: flex;
+        flex-direction: row; 
+        margin-left: 5vw;
+        margin-right: 5vw;
+        
+    }
+    .about-img{
+        margin-right: 2vw;
+    }
+    footer{
+        width: 100%;
+        margin: 0;
+        box-sizing: border-box;
+    }
+}
